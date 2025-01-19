@@ -1,299 +1,374 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="lightbox.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Jaeeun Lee</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Jaeeun Lee</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Jaeeun Lee</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links open">
-            </div>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
+      <div class="logo">Jaeeun Lee</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title__profile">Jaeeun,</h1>
-            <p class="section__text__p2">Software Development Student</p>
-            <div class="btn-container">
-                <button 
-                    class="btn btn-color-2"
-                    onclick="window.open('./assets/JaeeunLeeResume.png')"
-                >
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn Profile"
-                class="icon" onclick="location.href='https://www.linkedin.com/in/jaeeun-lee-a5b42b285/'">
-                <img src="./assets/github.png" alt="My Github Profile"
-                class="icon" onclick="location.href='https://github.com/Jaeeunleesait/'">
-                
-            </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title__profile">Jaeeun,</h1>
+        <p class="section__text__p2">Software Development Student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/JAEEUNLEEResume.png')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn Profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/jaeeun-lee-a5b42b285/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github Profile"
+            class="icon"
+            onclick="location.href='https://github.com/Jaeeunleesait/'"
+          />
+        </div>
+      </div>
     </section>
     <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img
-                    src="./assets/JaeeunLeePic.png" 
-                    alt="Profile picture"
-                    class="about-pic"
-                />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                     <div class="details-container">
-                        <img 
-                        src="./assets/education.png" 
-                        alt="Education icon" 
-                        class="icon"
-                        />
-                        <h2>Education</h2>
-                        <h3><p class="details-text">Southern Alberta Institute of Technology</p>
-                        <p>Software Development</p></h3>
-                    </div>
-                </div>
-            </div>
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/JaeeunLeePic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
         </div>
-        <img src="./assets/arrow.png"
-            alt="Arrow icon" 
-            class="icon arrow"
-            onclick="location.href='./#experience'"
-        />
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Education</h2>
+              <h3>
+                <p class="details-text">
+                  Southern Alberta Institute of Technology
+                </p>
+                <p>Software Development</p>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets//checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets//checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets//checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>C#</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="Experience icon"
-                            class="icon"
-                            />
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
+              </article>
+              <article>
+                <img
+                  src="./assets//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
             </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets//checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-        <img 
+      </div>
+      <img
         src="./assets/arrow.png"
-        alt="Arrow icon" 
+        alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-        />
+      />
     </section>
     <section id="projects">
-        <p class="section__text__p1">Brows My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/project-1.png"
-                    alt="project-1"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                    >
-                    Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                    >
-                    Live
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/project-2.png"
-                    alt="project-2"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                    >
-                    Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                    >
-                    Live
-                    </button>
-                </div>
-            </div>
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img 
-                    src="./assets/project-3.png"
-                    alt="project-3"
-                    class="project-img"
-                    />
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                    >
-                    Github
-                    </button>
-                    <button class="btn btn-color-2 project-btn"
-                    onclick="location.href='https://github.com/'"
-                    >
-                    Live
-                    </button>
-                </div>
-            </div>
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Project</h1>
+      <div class="project-details-container">
+        <div class="project-title">
+          Student Platform for SAIT International Centre
         </div>
+        <div class="project-text">
+          <p>
+            For my capstone project, my team and I are redesigning SAIT
+            International Centre’s application system to improve UX/UI, enhance
+            engagement, reduce admin tasks, and streamline communication and
+            event management. <br />
+            My role includes designing user interfaces with Figma, creating
+            prototypes, and implementing the frontend in React. The project will
+            be completed by April 2025.
+          </p>
         </div>
-        <img 
-        src="./assets/arrow.png"
-        alt="Arrow icon" 
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-        />
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img
-                src="./assets/email.png"
-                alt="Email icon"
-                class="icon contact-icon email-icon"
-                />
-                <p><a href="mailto:janejaeeunlee@gmail.com">janejaeeunlee@gmail.com</a>
-                </p>
-            </div>
-            <div class="contact-info-container">
-                <img
-                src="./assets/linkedin.png"
-                alt="LinkedIn icon"
-                class="icon contact-icon"
-                />
-                <p><a href="https://www.linkedin.com/in/jaeeun-lee-a5b42b285/">LinkedIn</a>
-                </p>
-            </div>
-        </div>
+        <button
+          class="project-btn"
+          onclick="location.href='https://www.figma.com/proto/ujUIa1L0ThiMmE0h6anTAA/Capstone?node-id=0-1&t=5aMsVQRbOCEGsa5e-1'"
+        >
+          Figma Prototype
+        </button>
+      </div>
 
+      <div class="gallery-container">
+        <div class="gallery">
+          <a
+            href="./assets/Student Login.png"
+            data-lightbox="pages"
+            data-title="Student Login"
+          >
+            <img src="./assets/Student Login.png" />
+          </a>
+
+          <a
+            href="./assets/Dashboard.png"
+            data-lightbox="pages"
+            data-title="Dashboard"
+          >
+            <img src="./assets/Dashboard.png" />
+          </a>
+          <a
+            href="./assets/All Notifications.png"
+            data-lightbox="pages"
+            data-title="Notifications"
+          >
+            <img src="./assets/All Notifications.png" />
+          </a>
+          <a
+            href="./assets/All Events.png"
+            data-lightbox="pages"
+            data-title="Events"
+          >
+            <img src="./assets/All Events.png" />
+          </a>
+          <a
+            href="./assets/Student chosen event.png"
+            data-lightbox="pages"
+            data-title="Chosen event"
+          >
+            <img src="./assets/Student chosen event.png" />
+          </a>
+          <a
+            href="./assets/Delete My Event.png"
+            data-lightbox="pages"
+            data-title="Delete event"
+          >
+            <img src="./assets/Delete My Event.png" />
+          </a>
+          <a
+            href="./assets/Alumni Chosen event.png"
+            data-lightbox="pages"
+            data-title="Event for Alumni"
+          >
+            <img src="./assets/Alumni Chosen event.png" />
+          </a>
+          <a
+            href="./assets/All Groups.png"
+            data-lightbox="pages"
+            data-title="Groups"
+          >
+            <img src="./assets/All Groups.png" />
+          </a>
+          <a
+            href="./assets/Campus Information.png"
+            data-lightbox="pages"
+            data-title="Campus Info"
+          >
+            <img src="./assets/Campus Information.png" />
+          </a>
+          <a
+            href="./assets/Pre-Arrival.png"
+            data-lightbox="pages"
+            data-title="Pre-Arrival"
+          >
+            <img src="./assets/Pre-Arrival.png" />
+          </a>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:janejaeeunlee@gmail.com">janejaeeunlee@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/jaeeun-lee-a5b42b285/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Jaeeun Lee. All Right Reserved.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Jaeeun Lee. All Right Reserved.</p>
     </footer>
-    <script src="scripts.js"></script>    
-</body>
+    <script src="scripts.js"></script>
+    <script src="lightbox-plus-jquery.js"></script>
+  </body>
 </html>
